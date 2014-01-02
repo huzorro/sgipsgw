@@ -1,0 +1,9 @@
+#folders
+.settings/
+bin/
+lib/
+
+#files
+*.class
+.classpath
+.project

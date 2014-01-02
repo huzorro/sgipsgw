@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway>
+    <sessions>
+        <session>
+            <channelIds>000000</channelIds>
+            <duplexstream>
+              <host>127.0.0.1</host>
+              <port>8888</port>
+              <user>901077</user>
+              <passwd>ICP</passwd>
+              <gateId>1010</gateId>
+              <version>48</version>  
+              <idleTime>180</idleTime>
+              <lifeTime>259200</lifeTime>
+              <poolCheckoutTimeout>100</poolCheckoutTimeout>
+              <poolWatchTime>30</poolWatchTime>              
+              <maxRetry>3</maxRetry>
+              <retryWaitTime>60</retryWaitTime>
+              <maxSessions>1</maxSessions>
+              <windows>16</windows>
+              <generalThreadNum>0</generalThreadNum>
+              <scheduleThreadNum>0</scheduleThreadNum>
+              
+              <receiveQueueName>receiver1_1</receiveQueueName>
+              <responseQueueName>response1_1</responseQueueName>
+              <deliverQueueName>deliver1_1</deliverQueueName>
+              <reserveQueueName>reserve1_1</reserveQueueName>
+              <receiveQueuePathHome>z:\\temp</receiveQueuePathHome>
+              <responseQueuePathHome>z:\\temp</responseQueuePathHome>
+              <deliverQueuePathHome>z:\\temp</deliverQueuePathHome>
+			  <reserveQueuePathHome>z:\\temp</reserveQueuePathHome>		         
+            </duplexstream>            
+        </session>
+    </sessions>
+</gateway>    

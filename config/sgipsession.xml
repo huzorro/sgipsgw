@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gateway>
+    <sessions>
+        <session>
+            <channelIds>100001</channelIds>
+             <downstream>
+	          <host>127.0.0.1</host>
+              <port>8804</port>
+              <user>901782</user>
+              <passwd>ICP</passwd>
+              <gateId>1010</gateId>
+              <version>2</version>
+              <idleTime>60</idleTime>
+              <lifeTime>259200</lifeTime>
+              <!--poolCheckoutTimeout  TimeUnit.MILLISECONDS -->
+              <poolCheckoutTimeout>100</poolCheckoutTimeout>
+              <poolWatchTime>20</poolWatchTime>
+              <maxRetry>3</maxRetry>
+              <retryWaitTime>60</retryWaitTime>
+              <maxSessions>1</maxSessions>
+              <windows>16</windows>
+              <generalThreadNum>0</generalThreadNum>
+              <scheduleThreadNum>0</scheduleThreadNum>
+              
+              <receiveQueueName>receiver7</receiveQueueName>
+              <responseQueueName>response7</responseQueueName>
+              <deliverQueueName>deliver7</deliverQueueName>
+              <reserveQueueName>reserve7</reserveQueueName>
+              <receiveQueuePathHome>z:\\sgipsgw</receiveQueuePathHome>
+              <responseQueuePathHome>z:\\sgipsgw</responseQueuePathHome>
+              <deliverQueuePathHome>z:\\sgipsgw</deliverQueuePathHome>
+			  <reserveQueuePathHome>z:\\sgipsgw</reserveQueuePathHome>			  
+            </downstream>
+        </session>
+    </sessions>
+</gateway>

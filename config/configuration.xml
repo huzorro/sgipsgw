@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Test configuration definition file that demonstrates complex initialization -->
+<configuration>
+  <header>
+    <result forceReloadCheck="true">
+      <expressionEngine config-class="org.apache.commons.configuration.tree.xpath.XPathExpressionEngine"/>
+    </result>
+  </header>
+  <xml fileName='sgipsession.xml' config-name="sgipsession">
+    <reloadingStrategy refreshDelay="10000"
+      config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy"/>  
+  </xml>
+  <xml fileName='telnetsession.xml' config-name="telnetsession">
+    <reloadingStrategy refreshDelay="10000"
+      config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy"/>  
+  </xml>
+  <properties fileName="service.properties" throwExceptionOnMissing="true"
+      config-name="service" config-optional="true">
+      <reloadingStrategy refreshDelay="10000"
+      config-class="org.apache.commons.configuration.reloading.FileChangedReloadingStrategy"/>
+  </properties>
+</configuration>
